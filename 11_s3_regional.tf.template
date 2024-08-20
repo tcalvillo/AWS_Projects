@@ -1,0 +1,18 @@
+#============================== __REGION__ ================================
+provider "aws" {
+  alias  = "__REGION__"
+  region = "__REGION__"
+}
+
+module "regional_s3_buckets___REGION__" {
+  source                  = "./modules/regional_s3_buckets"  
+  providers = {
+    aws                   = aws.__REGION__
+  }
+  aws_env                 = var.aws_env
+  shortEnv                = var.shortEnv
+  logs_s3_retention       = var.logs_s3_retention_region 
+  appstackcode            = var.appstackcode 
+  ou_id                   = var.ou_id
+  central_bucket          = "${aws_s3_bucket.ec2logs_central_bucket}"
+}
