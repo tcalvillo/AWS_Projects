@@ -1,3 +1,0 @@
-
-projectcode              = "XXXXXX"
-teamproject              = "XXXX"
