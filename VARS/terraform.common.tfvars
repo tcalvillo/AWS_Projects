@@ -1,3 +1,0 @@
-
-projectcode              = "VPC"
-teamproject              = "Tiz"
