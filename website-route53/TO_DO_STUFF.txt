@@ -1,0 +1,10 @@
+01899.shop 
+
+.
+├── main.tf          # Provider and Terraform settings
+├── bucket.tf        # S3 bucket and website config
+├── bucket_policy.tf # Bucket policy and public access block
+├── route53.tf       # Route 53 hosted zone and records
+└── index.html       # Display message on website
+└── error.html       # Shows error on website
+└── cloudfront.tf    # CloudFront distribution and ACM certificate
