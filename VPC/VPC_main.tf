@@ -1,0 +1,14 @@
+
+resource "aws_vpc" "main" {
+  cidr_block           = "10.0.0.0/16"
+  enable_dns_support   = true
+  enable_dns_hostnames = true
+  tags = {
+    Name = "Main-VPC"
+  }
+}
+
+resource "aws_vpc_dhcp_options_association" "main_dns" {
+  vpc_id          = aws_vpc.main.id
+  dhcp_options_id = aws_vpc_dhcp_options.dns_resolver.id
+}
