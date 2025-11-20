@@ -1,0 +1,25 @@
+
+# Deploying SQL Server Databases on Amazon RDS
+Auto Scaling Group (1)
+Availability Zones (2)
+Backup and Maintenance Plan (1)
+Bastion Host (1)
+CloudWatch Alarms and Logs (1)
+Elastic Load Balancer  (1)
+IAM Role and Policy (1)
+Internet Gateway  (1)
+NAT Gateway  (2)
+Private Subnets (2)
+Public Subnets  (2)
+RDS DB Instances (2)
+RDS Option Group (1)
+RDS Parameter Group (1)
+RDS Subnet Group (1)
+Route Table Private (1)
+Route Table Public (1)
+Route 53 Record (1)
+Security Group (1)  
+
+
+
+
