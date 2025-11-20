@@ -16,18 +16,18 @@ variable "region" {
 variable "account_id" {
   description = "The AWS account ID where resources will be created"
   type        = string
-  default     = "123456789012" # NOTE: I replaced the correct one for security reasons
+  # NOTE: Use environment variables on your laptop for default value
 }
 
 variable "vpc_cidr_block" {
     description = "CIDR block for the VPC"
-    default = "10.0.0.0/22"  # Usable Host IP Range 10.0.0.1 - 10.0.3.254 -> Tot. 1,024
+    # NOTE: Use environment variables on your laptop for default value
 }
 
 variable "subnet_cidr_blocks" {
     description = "CIDR blocks for the subnets"
     type = list(string)
-    default = [ "10.0.0.0/23", "10.0.2.0/23" ]  # 10.0.0.0/23 (10.0.0.0 to 10.0.1.255); 10.0.2.0/23 (10.0.2.0 to 10.0.3.255)
+    # NOTE: Use environment variables on your laptop for default value
 }
 
 variable "availability_zones" {
