@@ -60,5 +60,5 @@ variable "role_count" {
 variable "account_id" {
   description = "The AWS account ID where resources will be created"
   type        = string
-  default     = "123456789012"   # NOTE: removed real one for security reasons
+  # NOTE: Use environment variables on your laptop for default value
 }
